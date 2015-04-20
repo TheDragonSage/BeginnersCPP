@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int choice = 0;
+
+    bool isUsed1 = false, isUsed2 = false;
+
+    while (true) {
+        cout << "Choose a number 1 or 2: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            isUsed1 = true;
+        } else {
+            isUsed2 = true;
+        }
+
+        if (isUsed1 == true && isUsed2 == true) {
+            break;
+        }
+    }
+
+
+    return 0;
+}
