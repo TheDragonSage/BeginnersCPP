@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+  
+    int i = 0;
+    int iRun;
+
+    
+    while (iRun != -999){
+    cout << "Press any key to continue or enter -999 to exit";
+    cin >> iRun;
+
+
+    if (iRun == -999){
+        break;
+    }
+
+
+    while (i < 10){
+         cout << i;
+         i++;
+    }
+
+    cout << endl;
+
+    for (i=1; 1<10; i++){
+         cout << i;
+    }
+    
+    cout << endl;
+
+  
+
+
+   return 0;
+
+  }
+}
