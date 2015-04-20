@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+    string z = "Hello world"; //Literally what's in quotes
+    bool j = true; //True or false -- 0, 1,  true, false
+    char k = 'a'; // Holds a single character
+
+    //i -- iterator.  
+
+
+    if (j == true) {
+        if (k == 'a') {
+            cout << z;
+        }
+    } else {
+        cout << "Whoops, false";
+    }
+
+    int m = 1; // Integer number,  whole number.   -32,768    -    32,767
+    long n = 123534241; //Used to store numbers bigger than an int
+    float o = 1233.12344; // Floating point number
+    double p = 123532523.123123; //is a float, with double the storage space
+
+    cout << setiosflags(ios::fixed) << setiosflags(ios::showpoint) << setprecision(2);
+
+    cout << p;
+
+    return 0;
+}
