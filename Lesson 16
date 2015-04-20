@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int choice;
+    double dollars = 0, euro = 0; //1,1.43
+    char Quit = ' ';
+    while (Quit != 'n') {
+        
+        cout << "Press 1 to convert Dollars to Euro or press 2 to convert Euros to Dollars: ";
+        cin >> choice;
+        
+        if(choice == 1){
+            cout << "\nEnter how many dollars you want to convert : ";
+            cin >> dollars;
+            euro = dollars/1.43;
+            cout << dollars << " dollars converts into " << euro << " euros" << endl;
+        }
+        if  (choice == 2){
+            cout << "\nEnter how many euros you want to convert : ";
+            cin >> euro;
+            dollars = euro * 1.43;
+            cout << euro << " euros converts into " << dollars << " dollars" << endl;
+        }
+        
+        
+        
+        
+        cout << "Do you want to run again? Y/N ";
+        cin >> Quit;
+    }
+    
+    return 0;
+}
+
+
+/*
+ Make a calculator that runs on a while loop, that we have the option of getting out of
+ +
+ Add, Subtract, Divide, Multiply and raise to a power
+ */
