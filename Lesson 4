@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip> //output manipulation
+
+using namespace std;
+
+int main () {
+    
+    double a = 1.7356, b = 2.337, c = 2.0, d = 2.0;
+    
+    cout << setiosflags(ios::showpoint) << setprecision(3); //setiosflags used to change the format of the output
+    cout << a*b << endl;
+    cout << c*d << endl;
+    cout << int(c*d) << endl; //typeCasting the output of the above statement as an integer
+    return 0;
+}
