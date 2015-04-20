@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+   
+    int k=4;
+    if (k==4)
+        cout << "K is not equal to 4";
+    cout << "K is really not equal to 4"<< endl;
+    
+    cout << "So K is equal to 5";
+ 
+    return 0;
+}
