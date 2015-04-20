@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool flipped = false;
+
+    int pay = 500;
+
+    if (pay > 400) {
+        flipped = true;
+    }
+
+    if (flipped) {
+        pay = 400;
+        flipped = false;
+    }
+
+    string str = "";
+
+    //cout << "Enter a value: ";
+    //int value;
+    //cin >> value;
+
+    //cout << "Enter a sentence: ";
+    //getline(cin,str);
+
+    //cout << str;
+
+
+    //false = 0 
+    //true = 1
+    //if(true) //Will always happen
+
+
+    return 0;
+}
