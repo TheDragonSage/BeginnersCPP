@@ -1,0 +1,15 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    
+    int studentsInFight = 6; //camelBack Notation
+    int classSize = 30;
+    
+    float percentInvolved = (studentsInFight*100)/classSize;
+    
+    cout << "Percentage of students involved in the fight was " << percentInvolved << endl;
+    
+    return 0;
+}
