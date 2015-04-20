@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int sales = 0;
+    double pay = 300;
+
+    //Comission sales, Anyone who sells more than $500 gets a $50 bonus, on top of their normal pay rate.
+    //Anyone who sells over 1000, gets 5% comission, and a $50 bonus
+    //Anyone who sells over 2500, gets a 10% comission, and a $100 bonus.
+
+    cout << "Enter Sales: ";
+    cin >> sales;
+
+    if (sales < 500) {
+        cout << "Needs improvement mate" << endl;
+        cout << pay;
+    } else if (sales > 500 && sales < 1000) {
+        cout << "Good job!" << endl;
+        pay += 50.0;
+        cout << pay;
+    } else if (sales > 1000 && sales < 2500) {
+        cout << "Great work, ol chap!" << endl;
+        pay = pay + (0.05 * sales) + 50.0;
+        cout << pay;
+    } else {
+        cout << "Amazing stuff!" << endl;
+        pay = pay + (0.1 * sales) + 100.0;
+        cout << pay;
+    }
+
+    return 0;
+}
