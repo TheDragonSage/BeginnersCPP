@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+    
+    double i, faren=0, c, maxCount, incr;
+    cout << "Celcicus" << setw(15) <<"Faren.\n";
+    
+    cout <<setiosflags(ios::showpoint) << setiosflags(ios::fixed) <<setprecision(1);
+    for (i=0; i<=100; i++){
+          faren= i*9/5+32;
+          cout << i << setw(15) << faren <<endl;
+    }
+    
+    cout << "\nWhat temp would you like to start at? ";
+    cin >> c;
+    
+    cout << "\nHow high would you like to count? ";
+    cin >> maxCount;
+    
+    cout << "\nWhat number would you like to count by?";
+    cin >> incr;
+    i=c;
+    cout << endl;
+    cout << "Celcicus" << setw(15) <<"Faren.\n";
+    
+    for (i=c; i < maxCount; i+=incr){
+        faren= i*9/5+32;
+        cout << i << setw(15) << faren << endl;
+    }
+    
+    
+    
+    return 0;
+}
