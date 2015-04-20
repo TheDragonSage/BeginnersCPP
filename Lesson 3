@@ -1,0 +1,38 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() { 
+    //PEMDAS
+    //Parentheses, Exponential, Multiplication/Division, Addition/Subtraction
+    //Parenthese are always evaluated first
+    //Evaluates left to right
+    //eg 1*5-4*3
+    //5-12
+    
+    int principal = 0;
+    int rate = 0;
+    int time = 0;
+    
+    float interest = 0;
+    float amount = 0;
+    
+    cout << "How much would you like to invest?" ;
+    cin >> principal;
+    
+    cout << "What is the rate of interest offered to you?" ;
+    cin >> rate;
+    
+    cout << "How long would you like to invest it for?" ;
+    cin >> time;
+    
+    interest = principal * time * rate / 100;
+    
+    amount = principal + interest;
+    
+    cout << "The interest your investment will generate is " << interest << endl;
+    cout << "Your returns will amount to " << amount << endl;
+    
+    return 0;
+}
