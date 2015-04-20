@@ -1,0 +1,65 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double var1 = 0, var2 = 0, result = 0;
+    char quit = ' ';
+    int choice = 0;
+    
+    while (quit != 'n'){
+        cout << "Hello there!" << endl;
+        cout << "Welcome to my first calculator" << endl;
+        cout << "Please enter your choice of operation" << endl;
+        cout << "1. Addition" << endl;
+        cout << "2. Subtraction" << endl;
+        cout << "3. Multiplication" << endl;
+        cout << "4. Division" << endl;
+        cout << "5. Raise to a power" << endl;
+        
+        cin >> choice;
+        cout << "You have selected : " << choice << endl;
+        
+        cout << "Enter the first number : " << endl;
+        cin >> var1;
+        
+        cout << "Enter the second number : " << endl;
+        cin >> var2;
+        
+        if (choice == 1){
+            result = var1 + var2;
+            cout << "The result is : " << result << endl;
+        }
+        
+        else if (choice == 2){
+            result = var1 - var2;
+            cout << "The result is : " << result << endl;
+        }
+        
+        else if (choice == 3) {
+            result = var1 * var2;
+            cout << "The result is : " << result << endl;           
+        }
+        
+        else if (choice == 4) {
+            result = var1 / var2;
+            cout << "The result is : " << result << endl;
+        }
+        
+        else if (choice == 5) {
+            result = 1;
+            while(var2 != 0){
+                result *= var1;
+                --var2;
+            }
+            cout << "The result is : " << result << endl;
+        }
+         cout << "Would you like to calculate some more? y/n : ";
+    cin >> quit;
+
+    }
+    
+   
+
+    return 0;
+}
