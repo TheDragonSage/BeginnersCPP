@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+    int i = 0, compNum = 333, guess;
+    char quit;
+
+    while (quit != 'y') {
+        cout << "The computer has guess a number between 1 and 1000, try to guess the number: ";
+        cin >> guess;
+
+        while (guess != compNum) {
+
+            if (guess < compNum) {
+                cout << "\nThe amount you guessed is less than the number the computer chose, try again: ";
+                cin >> guess;
+            }//endif
+            else if (guess > compNum) {
+                cout << "\nThe amount you guessed is greater than the number the computer chose, try again: ";
+                cin >> guess;
+            }//end elseif
+            else {
+                break;
+            }//end else
+        }//end while
+        cout << "\nCongratulations! You have successfully guess the number the computer chose";
+
+        cout << "\nDo you want to quit? y/n: ";
+        cin >> quit;
+    }
+
+    return 0;
+}
